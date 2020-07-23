@@ -1,0 +1,1802 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #ECEEF1;
+    font-family: AvenirNext, Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#navbar {
+    overflow: hidden;
+    padding: 1px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: whitesmoke;
+}
+
+#navbar a {
+    display: block;
+    float: right;
+    color: black;
+    padding: 9px;
+    text-decoration: none;
+    border-radius: 4px;
+    color: #481620;
+    font: bold 17px sans-serif;
+    margin-top: 0.5%;
+}
+
+#navbar a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#topnav {
+    margin-right: 1%;
+}
+
+#box {
+    padding: 10px;
+    margin-left: 25%;
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+#box button:hover {
+    color: navy;
+}
+
+.search {
+    margin-top: -45px;
+    width: 43%;
+    border: 3px solid #00B4CC;
+    border-right: none;
+    padding: 5px;
+    height: 36px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.searchButton {
+    margin-top: -45px;
+    width: 40px;
+    height: 36px;
+    border: 1px solid #00B4CC;
+    background: #00B4CC;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    margin-left: 5%;
+    margin-top: -2%;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 63%;
+    height: 60%;
+}
+
+#sideText {
+    margin-top: -52.8%;
+    margin-left: 68%;
+    overflow: auto;    
+}
+
+.sideText1 {
+    margin-top: -24%;
+    margin-left: 45%;
+}
+
+.img0 {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+hr.line2 {
+    width: 85%;
+    margin-right: 15%;
+    margin-top: -2%;
+}
+
+.text2-1 {
+    font-size: 0.8em;
+    margin-bottom: 0%;
+    font-weight: bold;
+}
+
+.text2-2 {
+    font-size: 0.8em;
+}
+
+.text2-3 {
+    font-size: 0.8em;
+    margin-top: 0%;
+}
+
+.text2-4 {
+    font-size: 0.8em;
+}
+
+.text2 {
+    padding-bottom: 12px;
+}
+
+#sideText2 {
+    margin-top: -51%;
+    clear: both;
+    margin-bottom: 150px;
+}
+
+#text {
+    margin-left: 5%;
+}
+
+hr.line {
+    border-top: 1px solid #00B4CC;
+    width: 60%;
+    margin-left: 5%;
+}
+
+.text-1 {
+    font-size: 12px;
+    color: blue;
+}
+
+.text-3 {
+    font-size: 14px;
+}
+
+.fa-thumbs-up {
+    padding-right: 8px;
+    cursor: pointer;
+}
+
+.fa-thumbs-down {
+    padding-left: 10px;
+    padding-right: 8px;
+    cursor: pointer;
+}
+
+.fa-share {
+    padding-left: 12px;
+    padding-right: 8px;
+}
+
+.fa-music {
+    padding-left: 10px;
+}
+
+.img1 {
+    border-radius: 50%;
+    width: 60px;
+    margin-left: 5%;
+}
+
+#text1 {
+    margin-top: -2%;
+    margin-left: 50.8%;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#text2 {
+    margin-left: 10%;
+    margin-top: -3.5%;
+}
+
+.text3-1 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.text3-2 {
+    font-size: 13px;
+    margin-top: 0.2%;
+}
+
+.text3-3 {
+    font-size: 14px;
+}
+
+.text3-4{
+    font-size: 14px;
+    margin-top: -1%;
+}
+
+.text3-5 {
+    color: blue;
+}
+
+button {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 0;
+}
+
+.myButton {
+    margin-top: 3%;
+    margin-left: 57%;
+    margin-bottom: 7%;
+}
+
+#text3 {
+    margin-top: -8%;
+    margin-left: 10%;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#myDIV {
+    display: none;
+    margin-left: 10%;
+    margin-top: 0%;
+    font-size: 14px;
+}
+
+.modal1 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content1 {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 25%;
+}
+
+.delBook {
+    font-size: 16px;
+}
+
+.cancelbtn,
+.deletebtn {
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    float: left;
+    width: 50%;
+}
+
+.cancelbtn {
+    background-color: white;
+    color: black;
+}
+
+.deletebtn {
+    color: blue;
+    background-color: white;
+}
+
+/* Add padding and center-align text to the container */
+.container1 {
+    padding: 16px;
+    text-align: center;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.comments {
+    margin-left: 10%;
+    font-size: 15px;
+}
+
+#text4 {
+    margin-top: -2.3%;
+    margin-left: 25%;
+    font-size: 15px;
+}
+
+.fa-sort {
+    padding-right: 10px;
+}
+
+.img2 {
+    border-radius: 50%;
+    width: 40px;
+    margin-left: 7%;
+    margin-top: 2%;
+}
+
+hr.line1 {
+    border-top: 1px solid #00B4CC;
+    width: 54%;
+    margin-left: 11%;
+}
+
+#text5 {
+    margin-left: 11%;
+    margin-top: -2.5%;
+    font-size: 14px;
+}
+
+.text6 {
+    margin-left: 12%;
+    margin-top: -4%;
+    font-size: 14px;
+}
+
+.text6-2 {
+    margin-left: 7.3%;
+    margin-top: -2.6%;
+}
+
+.text6-6 {
+    margin-left: 8%;
+    margin-top: -1.6%;
+    cursor: pointer;
+}
+
+.text6-7 {
+    margin-left: 1.8%;
+    margin-top: -1.55%;
+    cursor: pointer;
+    color: blue;
+}
+
+.fa-arrow-down {
+    cursor: pointer;
+    color: blue;
+}
+/******************************
+    MEDIA QUERIES----POTRAIT
+******************************/
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+@media only screen and (min-device-width: 320px) 
+and (max-device-width: 568px) 
+and (-webkit-min-device-pixel-ratio: 2) 
+and (orientation: portrait) {
+    #topnav a{
+        font-size: 16px;
+        margin-top: 2%;
+        text-align: center;
+        margin-right: 8%;
+    }
+    #box {
+        margin-left: 1%;
+        margin-top: 26%;
+        width: 100%;
+    }
+    .search {
+        width: 100%;
+    }
+    .video-container {
+        margin-top: -21%;
+    }
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
+        width: 96%;
+    }
+    #sideText {
+        margin-top: 135%;
+        margin-left: 5%;
+        overflow: auto;   
+    }
+    #sideText3 {
+        margin-top: -280%;
+        clear: both;
+    }
+    #sideText4 {
+        margin-top: 160%;
+        clear: both;
+    }
+    .img0 {
+        width: 100%;
+        max-width: 120px;
+        height: auto;
+    }
+    #text2-5 {
+        display: none;
+    }
+    #text2-6 {
+        display: none;
+    }
+    #text2-7 {
+        display: none;
+    }
+    #text2-8 {
+        display: none;
+    }
+    #text2-9 {
+        display: none;
+    }
+    #sideText1 {
+        margin-top: -28%;
+        margin-left: 45%;
+    }
+    .text2-1 {
+        margin-bottom: -3%;
+        margin-top: -5%;
+    }
+    .text2-2 {
+        margin-bottom: -3%;
+    }
+    .text2-3 {
+        margin-top: -3%;
+    }
+    .text2-4 {
+        margin-top: -8%;
+    }
+    hr.line2 {
+        width: 93%;
+    }
+    .text-2 {
+        font-size: 14px;
+    }
+    #text1 {
+        margin-top: 0%;
+        margin-left: 5.5%;
+        margin-bottom: 6%;
+        font-size: 13px;
+    }
+    hr.line {
+        width: 93%;
+    }
+    #text2 {
+        margin-left: 27%;
+        margin-top: -15%;
+    }
+    .img1 {
+        margin-left: 5%;
+        margin-top: 5%;
+    } 
+    #text3 {
+        display: none;
+    }
+    .myButton {
+        margin-top: 0%;
+        margin-left: 28%;
+        margin-bottom: 0%;
+    }
+    .comments {
+        margin-left: 5%;
+        font-size: 13px;
+    }
+    #text4 {
+        margin-top: -10%;
+        margin-left: 65%;
+        font-size: 13px;
+    }
+    .text6 {
+        margin-left: 25%;
+        margin-top: -16%;
+        font-size: 13px;
+    }
+    .text6-2 {
+        margin-left: 42%;
+        margin-top: -14%;
+        margin-bottom: -2%;
+    }
+    .text6-6 {
+        margin-left: 42%;
+        margin-top: -8.6%;
+    }
+    .text6-7 {
+        margin-left: 7%;
+        margin-top: -8%;
+    }
+    #text5 {
+        margin-left: 25%;
+        margin-top: -10%;
+        font-size: 13px;
+    }
+    hr.line1 {
+        width: 68%;
+        margin-left: 25%;
+    }
+    .modal1 {
+        width: 100%;
+        height: 100%;
+    }  
+    .modal-content1 {
+        background-color: white;
+        margin: 1% auto;
+        padding: 5px;
+        border: 1px solid #888;
+        width: 80%;
+    }
+    .delBook {
+        font-size: 13px;
+    }
+    .cancelbtn,
+    .deletebtn {
+        width: 40%;
+        font-size: 13px;
+    }
+    .text3-1,.text3-3,.text3-4,.text3-5 {
+        font-size: 12px;
+    }
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+@media only screen and (min-device-width: 375px) 
+and (max-device-width: 667px) 
+and (-webkit-min-device-pixel-ratio: 2) 
+and (orientation: portrait) {
+    #topnav a{
+        font-size: 18px;
+        margin-top: 2%;
+        text-align: center;
+        margin-right: 8%;
+    }
+    #box {
+        margin-left: 1%;
+        margin-top: 26%;
+        width: 100%;
+    }
+    .search {
+        width: 100%;
+    }
+    .video-container {
+        margin-top: -21%;
+    }
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
+        width: 96%;
+    }
+    #sideText {
+        margin-top: 135%;
+        margin-left: 5%;
+        overflow: auto;   
+        margin-bottom: -100px;
+    }
+    #sideText3 {
+        margin-top: -250%;
+    }
+    #sideText4 {
+        margin-top: 160%;
+        margin-bottom: 150px;
+    }
+    .text2-1 {
+        margin-bottom: -3%;
+        margin-top: 5%;
+        font-size: 14px;
+    }
+    .text2-2 {
+        margin-bottom: -33%;
+        font-size: 14px;
+    }
+    .text2-3 {
+        margin-top: -3%;
+        font-size: 14px;
+    }
+    .text2-4 {
+        margin-top: -8%;
+        font-size: 14px;
+    }
+    hr.line2 {
+        width: 93%;
+    }
+    .text-2 {
+        font-size: 14px;
+    }
+    #text1 {
+        margin-top: 0%;
+        margin-left: 5.5%;
+        margin-bottom: 6%;
+    }
+    #text2 {
+        margin-left: 27%;
+        margin-top: -15%;
+    }
+    .img1 {
+        margin-left: 5%;
+        margin-top: 5%;
+    } 
+    #text3 {
+        display: none;
+    }
+    .comments {
+        margin-left: 5%;
+        font-size: 13px;
+        margin-top: -27%;
+    }
+    #text4 {
+        margin-top: -8.8%;
+        margin-left: 65%;
+        font-size: 13px;
+        padding-bottom: 12px;
+    }
+    .text6 {
+        margin-left: 25%;
+        margin-top: -16%;
+        font-size: 15px;
+    }
+    .text6-2 {
+        margin-left: 42%;
+        margin-top: -13%;
+        margin-bottom: -2%;
+    }
+    .text6-6 {
+        margin-left: 40%;
+        margin-top: -7.9%;
+    }
+    .text6-7 {
+        margin-left: 7%;
+        margin-top: -7%;
+    }
+    #text5 {
+        margin-left: 25%;
+        margin-top: -10%;
+        font-size: 13px;
+    }
+    hr.line {
+        margin-bottom: 12%;
+        margin-top: 12%;
+    }
+    .text3-1,.text3-3,.text3-4,.text3-5 {
+        font-size: 15px;
+    }
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+    #sideText {
+        margin-top: 135%;
+        margin-left: 5%;
+        overflow: auto;   
+        margin-bottom: -100px;
+    }
+    #sideText3 {
+        margin-top: -245%;
+    }
+    #sideText4 {
+        margin-top: 160%;
+    }
+    .text2-1 {
+        margin-bottom: -3%;
+        margin-top: 5%;
+        font-size: 16px;
+    }
+    .text2-2 {
+        margin-bottom: -33%;
+        font-size: 16px;
+    }
+    .text2-3 {
+        margin-top: -3%;
+        font-size: 16px;
+    }
+    .text2-4 {
+        margin-top: -8%;
+        font-size: 16px;
+    }
+    hr.line2 {
+        width: 93%;
+    }
+    .text-2 {
+        font-size: 14px;
+    }
+    #text1 {
+        margin-top: 0%;
+        margin-left: 5.5%;
+        margin-bottom: 6%;
+    }
+    #text2 {
+        margin-left: 27%;
+        margin-top: -15%;
+    }
+    .img1 {
+        margin-left: 5%;
+        margin-top: 5%;
+    } 
+    #text3 {
+        display: none;
+    }
+    .comments {
+        margin-left: 5%;
+        font-size: 16px;
+        margin-top: -40%;
+    }
+    #text4 {
+        margin-top: -8.8%;
+        margin-left: 65%;
+        font-size: 16px;
+        padding-bottom: 12px;
+    }
+    .text6 {
+        margin-left: 25%;
+        margin-top: -16%;
+        font-size: 18px;
+    }
+    .text6-2 {
+        margin-left: 42%;
+        margin-top: -14.8%;
+        margin-bottom: -2%;
+    }
+    .text6-6 {
+        margin-left: 42%;
+        margin-top: -8.5%;
+    }
+    .text6-7 {
+        margin-left: 7%;
+        margin-top: -8.5%;
+    }
+    #text5 {
+        margin-left: 25%;
+        margin-top: -10%;
+        font-size: 16px;
+    }
+    hr.line {
+        margin-bottom: 12%;
+        margin-top: 12%;
+    }
+    .text-1 {
+        font-size: 15px;
+    }
+    .text-2,.text-3 {
+        font-size: 17px;
+    }
+    .text3-1,.text3-3,.text3-4,.text3-5 {
+        font-size: 17px;
+    }
+    .delBook {
+        font-size: 16px;
+    }
+    .cancelbtn,
+    .deletebtn {
+        width: 40%;
+        font-size: 16px;
+    }
+}
+
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    #topnav a{
+        font-size: 20px;
+    }
+    #box {
+        margin-left: 1%;
+        width: 100%;
+    }
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
+        width: 95%;
+    }   
+    #sideText {
+        margin-top: -5%; 
+        margin-left: 75%;
+    }
+    #sideText3 {
+        margin-top: -175%;
+    }
+    #sideText4 {
+        margin-bottom: 110%;
+    }
+    #text1 {
+        margin-left: 2%;
+        padding-top: 15px;
+    }
+    #text2 {
+        margin-left: 15%;
+        margin-top: -6%;
+    }
+    #text3 {
+        margin-left: 15%;
+        margin-top: -9%;
+    }
+    .myButton {
+        margin-left: 50%;
+        margin-top: 5%;
+    }
+    #myDIV {
+        margin-left: 15%;
+    }
+    #text4 {
+        margin-top: -4.5%;
+        margin-left: 38%;
+    }
+    #text5 {
+        margin-top: -5%;
+        margin-left: 15%;
+    }
+    hr.line1 {
+        margin-left: 14%;
+        width: 51%;
+    }
+    .text6-1 {
+        margin-left: 3%;
+        margin-top: -2%;
+    }
+    .text6-2 {
+        margin-left: 17%;
+        margin-top: -5%;
+    }
+    .text6-3 {
+        margin-left: 3%;
+    }
+    .text6-6 {
+        margin-top: -3%;
+        margin-left: 18%;
+    }
+    .fa-thumbs-up {
+        margin-left: 3.7%;
+    }
+    .fa-arrow-down {
+        margin-left: 4%;
+    }
+    .text6-7 {
+        margin-top: -3%;
+        margin-left: 8%;
+    }
+    #text2-7 {
+        display: none;
+    }
+    #text2-8 {
+        display: none;
+    }
+    #text2-9 {
+        display: none;
+    }
+    .img0 {
+        width: 100%;
+        max-width: 150px;
+        height: auto;
+    }
+    .sideText1 {
+        margin-top: 0%;
+        margin-left: 3%;
+    }
+    .text2-4{
+        margin-top: -6%;
+    }
+}
+
+/* ----------- iPad Pro ----------- */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    #sideText3 {
+        margin-top: -150%;
+    }
+    #sideText4 {
+        margin-bottom: 130%;
+    }
+    #text4 {
+        margin-top: -3.5%;
+        margin-left: 38%;
+    }
+    #text5 {
+        margin-top: -5%;
+        margin-left: 15%;
+    }
+    hr.line1 {
+        margin-left: 14%;
+        width: 51%;
+    }
+    .text6-1 {
+        margin-left: 3%;
+        margin-top: -2%;
+    }
+    .text6-2 {
+        margin-left: 16%;
+        margin-top: -3.9%;
+    }
+    .text6-3 {
+        margin-left: 3%;
+    }
+    .text6-6 {
+        margin-top: -2.5%;
+        margin-left: 16%;
+    }
+    .fa-thumbs-up {
+        margin-left: 3.7%;
+    }
+    .fa-arrow-down {
+        margin-left: 4%;
+    }
+    .text6-7 {
+        margin-top: -2.5%;
+        margin-left: 6.5%;
+    }
+    #text2-6 {
+        display: none;
+    }
+    #text2-7 {
+        display: none;
+    }
+    #text2-8 {
+        display: none;
+    }
+    #text2-9 {
+        display: none;
+    }
+    .img0 {
+        width: 100%;
+        max-width: 220px;
+        height: auto;
+    }
+    .sideText1 {
+        margin-top: 0%;
+        margin-left: 3%;
+    }
+    .text2-3{
+        margin-top: -2%;
+    }
+    .text2-4{
+        margin-top: -6%;
+    }
+    .modal1 {
+        width: 100%;
+        height: 100%;
+    }  
+    .modal-content1 {
+        background-color: white;
+        margin: 1% auto;
+        padding: 5px;
+        border: 1px solid #888;
+        width: 60%;
+    }
+    .delBook {
+        font-size: 15px;
+    }
+    .cancelbtn,
+    .deletebtn {
+        width: 50%;
+        font-size: 15px;
+    }
+    #sideText {
+        margin-bottom: 160px;
+    }
+}
+
+/******************************
+    MEDIA QUERIES----LANDSCAPE
+******************************/
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+    #box {
+        margin-left: 1%;
+    }
+    .video-container {
+        margin-top: -5%;
+    }
+    .text1 {
+        margin-top: 27%;
+    }
+    #text2-5 {
+        display: none;
+    }
+    #text2-6 {
+        display: none;
+    }
+    #text2-7 {
+        display: none;
+    }
+    .sideText1 {
+        margin-top: 1%;
+        margin-left: 2%;
+    }
+    .text2-4 {
+        margin-top: -6%;
+    }
+    #sideText3 {
+        margin-top: -160%;
+    }
+    .text-2 {
+        font-size: 14px;
+    }
+    #text1 {
+        padding-top: 10px;
+        margin-left: 0%;
+    }
+    #text2 {
+        margin-top: -9%;
+        margin-left: 17%;
+    }
+    #text3 {
+        margin-left: 17%;
+        margin-top: -10%;
+    }
+    #myDIV {
+        margin-left: 17%;
+        max-width: 290px;
+        word-wrap: break-word;
+    }
+    .myButton {
+        margin-top: 5%;
+        margin-left: 45%;
+    }
+    #text4 {
+        margin-top: -5.3%;
+        margin-left: 45%;
+    }
+    #text5 {
+        margin-top: -6.3%;
+        margin-left: 16%;
+    }
+    hr.line1 {
+        width: 50%;
+        margin-left: 15%;
+    }
+    .text6-1 {
+        margin-top: -7%;
+        margin-left: 5%;
+    }
+    .text6-2 {
+        margin-top: -5.8%;
+        margin-left: 23%;
+    }
+    .text6-3 {
+        margin-top: -1.5%;
+        margin-left: 5%;
+        max-width: 290px;
+        word-wrap:break-word;
+    }
+    .fa-thumbs-up {
+        margin-left: 5.8%;
+    }
+    .text6-6 {
+        margin-top: -3.3%;
+        margin-left: 23%
+    }
+    .fa-arrow-down {
+        margin-top: -2%;
+        margin-left: 6%;
+    }
+    .text6-7 {
+        margin-top: -3.3%;
+        margin-left: 10%;
+    }
+    .modal1 {
+        width: 100%;
+        height: 100%;
+    }  
+    .modal-content1 {
+        padding: 5px;
+        width: 80%;
+    }
+    .delBook {
+        font-size: 13px;
+    }
+    .cancelbtn,
+    .deletebtn {
+        width: 50%;
+        font-size: 13px;
+    }
+    .img0 {
+        width: 100%;
+        max-width: 150px;
+        height: auto;
+    }
+    .text3-3, .text3-4 {
+        max-width: 280px;
+        word-wrap:break-word;
+    }
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    #box {
+        margin-left: 1%;
+    }
+    .video-container {
+        margin-top: -5%;
+    }
+    .text1 {
+        margin-top: 27%;
+    }
+    #text2-5 {
+        display: none;
+    }
+    #text2-6 {
+        display: none;
+    }
+    #text2-7 {
+        display: none;
+    }
+    .sideText1 {
+        margin-top: -1%;
+        margin-left: 2%;
+    }
+    .text2-4 {
+        margin-top: -6%;
+    }
+    #sideText3 {
+        margin-top: -190%;
+    }
+    .text-2 {
+        font-size: 14px;
+    }
+    #text1 {
+        padding-top: 10px;
+        margin-left: 0%;
+    }
+    #text2 {
+        margin-top: -9%;
+        margin-left: 17%;
+    }
+    #text3 {
+        margin-left: 17%;
+        margin-top: -10%;
+    }
+    #myDIV {
+        margin-left: 17%;
+        max-width: 290px;
+        word-wrap: break-word;
+    }
+    .myButton {
+        margin-top: 5%;
+        margin-left: 45%;
+    }
+    #text4 {
+        margin-top: -6.3%;
+        margin-left: 45%;
+    }
+    #text5 {
+        margin-top: -6.3%;
+        margin-left: 16%;
+    }
+    hr.line1 {
+        width: 50%;
+        margin-left: 15%;
+    }
+    .text6-1 {
+        margin-top: -7%;
+        margin-left: 5%;
+    }
+    .text6-2 {
+        margin-top: -6.8%;
+        margin-left: 25%;
+    }
+    .text6-3 {
+        margin-top: -2%;
+        margin-left: 5%;
+        max-width: 290px;
+        word-wrap:break-word;
+    }
+    .fa-thumbs-up {
+        margin-left: 5.8%;
+    }
+    .text6-6 {
+        margin-top: -4%;
+        margin-left: 25%
+    }
+    .fa-arrow-down {
+        margin-top: -2%;
+        margin-left: 6%;
+    }
+    .text6-7 {
+        margin-top: -3.9%;
+        margin-left: 10%;
+    }
+    .modal1 {
+        width: 100%;
+        height: 100%;
+    }  
+    .modal-content1 {
+        padding: 5px;
+        width: 80%;
+    }
+    .delBook {
+        font-size: 13px;
+    }
+    .cancelbtn,
+    .deletebtn {
+        width: 50%;
+        font-size: 13px;
+    }
+    .img0 {
+        width: 100%;
+        max-width: 150px;
+        height: auto;
+    }
+    .text3-3, .text3-4 {
+        max-width: 280px;
+        word-wrap:break-word;
+    }
+}
+
+/* ----------- iPhone X ----------- */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+    #box {
+        margin-left: 1%;
+    }
+    .video-container {
+        margin-top: -5%;
+    }
+    .text1 {
+        margin-top: 16%;
+    }
+    #text2-5 {
+        display: none;
+    }
+    #text2-6 {
+        display: none;
+    }
+    #text2-7 {
+        display: none;
+    }
+    .sideText1 {
+        margin-top: 1%;
+        margin-left: 2%;
+    }
+    .text2-4 {
+        margin-top: -6%;
+    }
+    #sideText3 {
+        margin-top: -140%;
+    }
+    .text-2 {
+        font-size: 14px;
+    }
+    #text1 {
+        padding-top: 10px;
+        margin-left: 0%;
+    }
+    #text2 {
+        margin-top: -9%;
+        margin-left: 17%;
+    }
+    #text3 {
+        margin-left: 17%;
+        margin-top: -10%;
+    }
+    #myDIV {
+        margin-left: 17%;
+        max-width: 290px;
+        word-wrap: break-word;
+    }
+    .myButton {
+        margin-top: 5%;
+        margin-left: 45%;
+    }
+    #text4 {
+        margin-top: -4.4%;
+        margin-left: 36%;
+    }
+    #text5 {
+        margin-top: -6.3%;
+        margin-left: 16%;
+    }
+    hr.line1 {
+        width: 50%;
+        margin-left: 15%;
+    }
+    .text6-1 {
+        margin-top: -7%;
+        margin-left: 5%;
+    }
+    .text6-2 {
+        margin-top: -4.8%;
+        margin-left: 19%;
+    }
+    .text6-3 {
+        margin-top: -1.5%;
+        margin-left: 5%;
+        max-width: 290px;
+        word-wrap:break-word;
+    }
+    .fa-thumbs-up {
+        margin-left: 5.8%;
+    }
+    .text6-6 {
+        margin-top: -2.6%;
+        margin-left: 20%
+    }
+    .fa-arrow-down {
+        margin-top: -2%;
+        margin-left: 6%;
+    }
+    .text6-7 {
+        margin-top: -2.9%;
+        margin-left: 9%;
+    }
+    .modal1 {
+        width: 100%;
+        height: 100%;
+    }  
+    .modal-content1 {
+        padding: 5px;
+        width: 80%;
+    }
+    .delBook {
+        font-size: 13px;
+    }
+    .cancelbtn,
+    .deletebtn {
+        width: 50%;
+        font-size: 13px;
+    }
+    .img0 {
+        width: 100%;
+        max-width: 190px;
+        height: auto;
+    }
+    .text3-3, .text3-4 {
+        max-width: 280px;
+        word-wrap:break-word;
+    }
+    .text2-3 {
+        margin-bottom: 7%;
+    }
+}
+
+/* ----------- iPhone 6+, 7+ and 8 ----------- */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+    #box {
+        margin-left: 1%;
+    }
+    .video-container {
+        margin-top: -5%;
+    }
+    .text1 {
+        margin-top: 20%;
+    }
+    #text2-5 {
+        display: none;
+    }
+    #text2-6 {
+        display: none;
+    }
+    #text2-7 {
+        display: none;
+    }
+    .sideText1 {
+        margin-top: 1%;
+        margin-left: 2%;
+    }
+    .text2-4 {
+        margin-top: -6%;
+    }
+    #sideText3 {
+        margin-top: -150%;
+    }
+    .text-2 {
+        font-size: 14px;
+    }
+    #text1 {
+        padding-top: 10px;
+        margin-left: 0%;
+    }
+    #text2 {
+        margin-top: -9%;
+        margin-left: 17%;
+    }
+    #text3 {
+        margin-left: 17%;
+        margin-top: -10%;
+    }
+    #myDIV {
+        margin-left: 17%;
+        max-width: 290px;
+        word-wrap: break-word;
+    }
+    .myButton {
+        margin-top: 5%;
+        margin-left: 45%;
+    }
+    #text4 {
+        margin-top: -4.8%;
+        margin-left: 40%;
+    }
+    #text5 {
+        margin-top: -6.3%;
+        margin-left: 16%;
+    }
+    hr.line1 {
+        width: 50%;
+        margin-left: 15%;
+    }
+    .text6-1 {
+        margin-top: -7%;
+        margin-left: 5%;
+    }
+    .text6-2 {
+        margin-top: -5.2%;
+        margin-left: 21%;
+    }
+    .text6-3 {
+        margin-top: -1.5%;
+        margin-left: 5%;
+        max-width: 290px;
+        word-wrap:break-word;
+    }
+    .fa-thumbs-up {
+        margin-left: 5.8%;
+    }
+    .text6-6 {
+        margin-top: -3.1%;
+        margin-left: 21.5%
+    }
+    .fa-arrow-down {
+        margin-top: -2%;
+        margin-left: 6%;
+    }
+    .text6-7 {
+        margin-top: -3.1%;
+        margin-left: 9%;
+    }
+    .modal1 {
+        width: 100%;
+        height: 100%;
+    }  
+    .modal-content1 {
+        padding: 5px;
+        width: 80%;
+    }
+    .delBook {
+        font-size: 13px;
+    }
+    .cancelbtn,
+    .deletebtn {
+        width: 50%;
+        font-size: 13px;
+    }
+    .img0 {
+        width: 100%;
+        max-width: 170px;
+        height: auto;
+    }
+    .text3-3, .text3-4 {
+        max-width: 280px;
+        word-wrap:break-word;
+    }
+}
+
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+ @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .video-container {
+        margin-top: -5%;
+    }
+    .text1 {
+        margin-top: 11%;
+    }
+    #text2-5 {
+        display: none;
+    }
+    #text2-6 {
+        display: none;
+    }
+    #text2-7 {
+        display: none;
+    }
+    .sideText1 {
+        margin-top: 1%;
+        margin-left: 2%;
+    }
+    .text2-4 {
+        margin-top: -6%;
+    }
+    #sideText3 {
+        margin-top: -147%;
+    }
+    .text-2 {
+        font-size: 14px;
+    }
+    #text1 {
+        padding-top: 20px;
+        margin-left: 0%;
+    }
+    #text2 {
+        margin-top: -5%;
+        margin-left: 12%;
+    }
+    #text3 {
+        margin-left: 12%;
+        margin-top: -9%;
+    }
+    #myDIV {
+        margin-left: 12%;
+    }
+    .myButton {
+        margin-top: 4.5%;
+        margin-left: 55%;
+    }
+    #text4 {
+        margin-top: -3.8%;
+        margin-left: 33%;
+    }
+    #text5 {
+        margin-top: -3.8%;
+        margin-left: 13%;
+    }
+    hr.line1 {
+        width: 52%;
+        margin-left: 13%;
+    }
+    .text6-1 {
+        margin-top: -7%;
+        margin-left: 5%;
+    }
+    .text6-2 {
+        margin-top: -3.5%;
+        margin-left: 15%;
+    }
+    .text6-3 {
+        margin-top: -1%;
+        margin-left: 5%;
+    }
+    .fa-thumbs-up {
+        margin-left: 5.8%;
+    }
+    .text6-6 {
+        margin-top: -2.1%;
+        margin-left: 17%
+    }
+    .fa-arrow-down {
+        margin-top: -2%;
+        margin-left: 6%;
+    }
+    .text6-7 {
+        margin-top: -2%;
+        margin-left: 8%;
+    }
+    .modal1 {
+        width: 100%;
+        height: 100%;
+    }  
+    .modal-content1 {
+        padding: 5px;
+        width: 80%;
+    }
+    .delBook {
+        font-size: 13px;
+    }
+    .cancelbtn,
+    .deletebtn {
+        width: 50%;
+        font-size: 13px;
+    }
+    .img0 {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+    }
+    .text2-3 {
+        margin-bottom: 7%;
+    }
+    #sideText {
+        margin-bottom: 250px;
+    }
+    .text6 {
+        margin-top: 2.3%;
+        margin-left: 8%;
+    }
+}
+
+/* ----------- iPad Pro 12.9" ----------- */
+@media only screen 
+  and (min-device-width: 1366px) 
+  and (max-device-width: 1366px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    #sideText3 {
+        margin-top: -41%;
+    }
+    #text4 {
+        margin-top: -2.8%;
+        margin-left: 28%;
+    }
+    .text6-2 {
+        margin-top: -3%;
+        margin-left: 9%;
+    }
+    .text6-6 {
+        margin-top: -1.9%;
+        margin-left: 9%;
+    }
+    .text6-7 {
+        margin-top: -2%;
+    }
+    .myButton {
+        margin-left: 57%;
+        margin-top: 5%;
+    }
+    #text3 {
+        margin-left: 10%;
+        margin-top: -8.5%;
+    }
+    .sideText1 {
+        margin-left: 49%;
+        margin-top: -29%;
+    }
+    #text1 {
+        margin-left: 48%;
+    }
+}
+
+/******LAPTOPS*******/
+@media only screen 
+and (min-width: 1394px) 
+and (max-width: 1400px) {
+    .sideText1 {
+        margin-left: 48%;
+        margin-top: -26%;
+    }
+    #sideText3 {
+        margin-top: -45%;
+    }
+    #text1 {
+        margin-left: 50%;
+    }
+}
+
+@media only screen 
+and (min-width: 1354px) 
+and (max-width: 1393px) {
+    .sideText1 {
+        margin-left: 48%;
+        margin-top: -26%;
+    }
+    #sideText3 {
+        margin-top: -45%;
+    }
+    #text1 {
+        margin-left: 50%;
+    }
+}
+
+@media only screen   
+and (min-width : 450px)  
+and (max-width : 1100px) {
+    #topnav a {
+        font-size: 14px;
+    }
+    #box {
+        margin-left: 5%;
+    }
+    .sideText1 {
+        margin-left: 2%;
+        margin-top: -1%;
+    }
+    #text2-5 {
+        display: none;
+    }
+    #text2-6 {
+        display: none;
+    }
+    #text2-7 {
+        display: none;
+    }
+    .text-2 {
+        font-size: 14px;
+    }
+    #text1 {
+        padding-top: 15px;
+        margin-left: 6%;
+    }
+    #text2 {
+        margin-left: 20%;
+        margin-top: -10%;
+        max-width: 190px;
+        word-wrap:break-word;
+    }
+    .myButton {
+        margin-left: 43%;
+    }
+    #text3 {
+        margin-top: -11%;
+    }
+    #myDIV {
+        max-width: 290px;
+        word-wrap:break-word;
+    }
+    #text4 {
+        margin-left: 10%;
+    }
+    #text5{
+        margin-left: 18%;
+        margin-top: -6%;
+    }
+    .text6 {
+        margin-left: 18%;
+        margin-top: -9%;
+    }
+    .text6-2 {
+        margin-top: -8.2%;
+        margin-left: 23%;
+    }
+    .text6-3 {
+        max-width: 250px;
+        word-wrap:break-word;
+    }
+    .text6-6 {
+        margin-top: -4.7%;
+        margin-left: 23%;
+    }
+    .text6-7 {
+        margin-top: -4.7%;
+        margin-left: 4%;
+    }
+
+}
+
+@media only screen   
+and (min-width : 1100px)  
+and (max-width : 1150px) {
+    .sideText1 {
+        margin-left: 59%;
+        margin-top: -35%;
+    }
+}
+
+@media only screen   
+and (min-width : 500px)  
+and (max-width : 510px) {
+    #sideText3 {
+        margin-top: -230%;
+    }
+}
+
+
+
+
+

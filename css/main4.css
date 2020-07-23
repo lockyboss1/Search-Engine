@@ -1,0 +1,670 @@
+#navbar {
+    overflow: hidden;
+    background-color: whitesmoke;
+    padding: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#navbar a {
+    float: right;
+    color: black;
+    padding: 9px;
+    text-decoration: none;
+    border-radius: 4px;
+    color: #481620;
+    font: bold 17px sans-serif;
+    margin-top: 0.5%;
+}
+
+#navbar a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#topnav {
+    margin-right: 1%;
+}
+
+#box {
+    padding: 10px;
+    margin-left: 25%;
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.search {
+    margin-top: -43px;
+    width: 43%;
+    border: 3px solid #00B4CC;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.searchButton {
+    margin-top: -43px;
+    width: 40px;
+    height: 36px;
+    border: 1px solid #00B4CC;
+    background: #00B4CC;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+img {
+    width: 100%;
+    max-width: 325px;
+    height: auto;
+    padding-right: 22px;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 120px;
+    padding-left: 30px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 800px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+/* Add Animation */
+.modal-content,
+#caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0.1)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#size1 {
+    height: 250px;
+}
+
+#size2 {
+    height: 394px;
+}
+
+#size3 {
+    height: 394px;
+}
+
+#size4 {
+    height: 394px;
+    margin-top: -10.2%;
+}
+
+#size5 {
+    height: 394px;
+    margin-top: -10.5%;
+}
+
+#size6 {
+    height: 250px;
+}
+
+#size7 {
+    height: 250px;
+}
+/******************************
+        MEDIA QUERIES
+******************************/
+/* Portrait */
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    #topnav a{
+        font-size: 14px;
+        margin-top: 2%;
+        text-align: center;
+        margin-right: 8%;
+    }
+    #box {
+        margin-left: 7%;
+        margin-top: 26%;
+        width: 82%;
+    }
+    .search {
+        width: 100%;
+    }
+    img {
+        width: 90%;
+        max-width: 110px;
+    }
+    #size7 {
+       margin-bottom: -15%;
+    }
+    #size6 {
+        margin-bottom: -2%;
+    }
+    #size8 {
+        margin-top: -10%;
+        margin-bottom: 10%;
+    }
+    #size3 {
+        margin-bottom: 10%;
+    }
+    .modal-content {
+       margin-left: 10%;
+    }
+    #size1, #size2, #size3, #size4, #size5, #size6, #size7 {
+        height: 100px;
+    }
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+    img {
+        width: 100%;
+        max-width: 140px;
+    }
+    #container {
+        margin-top: 150px;
+    }
+    #size6 {
+        margin-top: -4%;
+        margin-bottom: 0%;
+    }
+    #topnav a {
+        font-size: 16px;
+    }
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+/* Portrait */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+    img {
+        width: 100%;
+        max-width: 160px;
+    }
+    #container {
+        margin-top: 150px;
+    }
+    #size6 {
+        margin-top: -4%;
+        margin-bottom: 0%;
+    }
+    #topnav a {
+        font-size: 18px;
+    }
+}
+
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    #box {
+        margin-left: 7%;
+        width: 82%;
+    }
+    .search {
+        width: 60%;
+    }
+    #size3 {
+        margin-top: -19%;
+        margin-bottom: 11%;
+    }
+    #size8 {
+        margin-top: -11.5%;
+        margin-bottom: 11%;
+    }
+    #size6 {
+        margin-top: 1%;
+    }
+    #size9 {
+        margin-top: -8%;
+    }
+}
+
+/* ----------- iPad Pro 12.9" ----------- */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .search {
+        width: 67%;
+    }
+    img {
+        width: 100%;
+        max-width: 300px;
+    }
+    #size3 {
+        margin-top: 0px;
+     
+    }
+    #size7 {
+        margin-top: -25%;
+    }
+    #size6 {
+        margin-top: -28%;
+    }
+    #size5 {
+        margin-top: 1%;
+    }
+    #size10, #size9, #size8, #size11, #size12, #size13, #size14, #size15, 
+    #size16, #size17, #size18, #size19, #size20 {
+        height: 230px;
+    }
+    #size10 {
+        margin-top: -40%;
+    }
+    #size9 {
+        margin-top: -15.5%;
+    }
+    #size8{
+        margin-top: -10%;
+    }
+    #size11 {
+        margin-top: -33.5%;
+    }
+    #size20 {
+        margin-top: -32.5%;
+    }
+    #size13 {
+        margin-top: -31.5%;
+    }
+    #size16 {
+        margin-top: -31.5%;
+    }
+    #size14 {
+        margin-top: -33%;
+    }
+    #size17 {
+        margin-top: -32.5%;
+    }
+    #size18 {
+        margin-left: 66%;
+        margin-top: -31.5%;
+    }
+    #caption {
+        font-size: 45px;
+    }
+    #navbar a { 
+        font-size: 22px;
+    }
+}
+
+/* Landscape */
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+    .search {
+        width: 40%;
+    }
+    #box {
+       margin-left: 5%;
+    }
+    img {
+        width: 100%;
+        max-width: 180px;
+    }
+    #size2, #size3, #size4, #size5 {
+        height: 300px;
+    }
+    #size10, #size9, #size8, #size11, #size12, #size13, #size14, #size15, 
+    #size16, #size17, #size18, #size19, #size20, #size7, #size1, #size6 {
+        height: 130px;
+    }
+    #size7 {
+        margin-top: -39.5%;
+    }
+    #size2 {
+        margin-bottom: 12%;
+        padding-top: 78px;
+    }
+    #size4 {
+        margin-bottom: 10%;
+    }
+    #size6 {
+        margin-top: -64.5%;
+    }
+    #size10 {
+        margin-top: -79.5%;
+    }
+    #size11, #size14, #size17   {
+        margin-top: -74.5%;
+    }
+    #size2 {
+        margin-top: -12.5%;
+    }
+    #size9 {
+        margin-top: -27.5%;
+    }
+    #size4 {
+        margin-top: -12.5%;
+    }
+    #size8 {
+        margin-top: -12.5%;
+    }
+    #size9 {
+        margin-top: -37.5%;
+    }
+    #size20, #size13, #size16 {
+        margin-top: -54.5%;
+    }
+    #size15 {
+        margin-left: -32.5%;
+        margin-top: -50.5%;
+    }
+    #size16 {
+        margin-left: 65%;
+    }
+    #size18 {
+        margin-left: -32.5%;
+        margin-top: -50.5%;
+    }
+    #size14 {
+        margin-top: -26%;
+        
+    }
+    #size15 {
+        margin-top: -30.5%;
+        margin-left: 32.5%;
+    }
+    #size17 {
+        margin-left: -97.5%;
+    }
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    img {
+        width: 100%;
+        max-width: 150px;
+    }
+    #size2, #size3, #size4, #size5 {
+        height: 250px;
+    }
+    #size10, #size9, #size8, #size11, #size12, #size13, #size14, #size15, 
+    #size16, #size17, #size18, #size19, #size20, #size7, #size1, #size6 {
+        height: 110px;
+    }
+    #size2 {
+        padding-top: 65px;
+    }
+    #size7 {
+       margin-top: -39%;
+    }
+    #size6 {
+        margin-top: -63%;
+    }
+    #size10 { 
+        margin-top: -75%;
+    }
+    #size11 { 
+        margin-top: -70%;
+    }
+    #size17 { 
+        margin-top: -70%;
+        margin-left: 0%;
+    }
+    #size14 { 
+        margin-top: -45%;
+    }
+    #size18 { 
+        margin-top: -20%;
+        margin-left: -33%;
+    }
+    #size15 { 
+        margin-top: -30%;
+        margin-left: 66%;
+    }
+    #size9 {
+        margin-top: -37%;
+    }
+    #size20, #size13 {
+        margin-top: -54%;
+    }
+    #size16 {
+        margin-top: -54%;
+        margin-left: 66%;
+
+    }
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+    .search {
+        width: 45%;
+    }
+    #box {
+       margin-left: 5%;
+    }
+    img {
+        width: 100%;
+        max-width: 205px;
+    }
+    #size2, #size3, #size4, #size5 {
+        height: 300px;
+    }
+    #size10, #size9, #size8, #size11, #size12, #size13, #size14, #size15, 
+    #size16, #size17, #size18, #size19, #size20, #size7, #size1, #size6 {
+        height: 130px;
+    }
+    #size7 {
+        margin-top: -25%;
+    }
+    #size4 {
+        padding-top: 70px;
+        padding-bottom: 95px;
+    }
+    #size6 {
+        margin-top: -60%;
+    }
+    #size10, #size11, #size14, #size17 {
+        margin-top: -73%;
+    }
+    #size9 {
+        margin-top: -35%;
+    }
+    #size20, #size13, #size17 {
+        margin-top: -49%;
+    }
+    #size18 {
+        margin-left: -3%;
+        margin-top: -50%;
+    }
+    #size15 {
+        margin-left: 33%;
+        margin-top: -50%;
+    }
+    #size17 {
+        margin-left: -33%;
+        margin-top: -29%;
+    }
+    #size16 {
+        margin-top: -51%;
+    }
+    #size18 {
+        margin-left: 66%;
+        margin-top: -28%;
+    }
+}
+
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .search {
+        width: 55%;
+    }
+    #box {
+        margin-left: 5%;
+    }
+    img {
+        width: 100%;
+        max-width: 220px;
+    }
+    #size2, #size3, #size4, #size5 {
+        height: 350px;
+    }
+    #size10, #size9, #size8, #size11, #size12, #size13, #size14, #size15, 
+    #size16, #size17, #size18, #size19, #size20, #size7, #size1, #size6 {
+        height: 170px;
+    }
+    #navbar a {
+        font-size: 22px;
+    }
+    #size4 {
+        margin-top: -18%;
+    }
+    #size5{
+        margin-top: -18%;
+    }
+}
+
+/* ----------- iPad Pro 12.9" ----------- */
+@media only screen 
+  and (min-device-width: 1366px) 
+  and (max-device-width: 1366px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    #container {
+        padding-top: 20px;
+    }
+    #navbar a {
+        font-size: 24px;
+    }
+    img {
+        width: 100%;
+        max-width: 240px;
+    }
+    #size2, #size3, #size4, #size5 {
+        height: 350px;
+    }
+    #size10, #size9, #size8, #size11, #size12, #size13, #size14, #size15, 
+    #size16, #size17, #size18, #size19, #size20, #size7, #size1, #size6 {
+        height: 160px;
+    }
+    #size4, #size5  {
+        margin-top: 0%;
+    }
+    #size8, #size9 {
+        margin-top: -14.5%;
+    }
+    #size19, #size12, #size14 {
+        margin-top: -29%;
+    }
+    #size20, #size15  {
+        margin-top: -28%;
+    }
+    #size13 {
+        margin-top: -14%;
+    }
+    #size17 {
+        margin-left: 39.6%;
+        margin-top: -29%;
+    }
+    #size16 {
+        margin-left: -39.6%;
+        margin-top: -15.5%;
+    }
+    #size18 {
+        margin-left: -59.5%;
+        margin-top: -14.5%;
+    }
+}
